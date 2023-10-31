@@ -1,14 +1,16 @@
 const express = require('express') 
 const router = express.Router()
-const User=require('../controllers/user.js')
+import * as userController from '../controllers/user.js'
 
 
 
-router.get('/all',User.get_all)
+router.get('/all',userController.getProductController)
 
-router.post('/register',User.register)
+router.post('/register',userController.addProductController)
 
-router.put('/update/:id',User.update)
+router.delete('/delete/:id',userController.deleteProductController)
+
+router.put('/update/:id',userController.updateProductController)
 
 
 module.exports=router

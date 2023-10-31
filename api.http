@@ -8,3 +8,7 @@ Content-Type: application/json
     "name":"trmthanh@gmail.com",
     "email":123456789
 }
+
+
+###
+DELETE http://localhost:3001/api/user/delete/id=4

@@ -6,7 +6,9 @@
     "password": "Tranminhthanh220895@",
     "database": "u599532461_test",
     "host": "srv1012.hstgr.io",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "timezone":"+07:00",
+    "logging":false
   },
   "test": {
     "username": "root",

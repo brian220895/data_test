@@ -1,9 +1,9 @@
 
-const express =require('express')
-const cors =require('cors')
-const dotenv =require('dotenv')
-require('./data_connection');
-const initRoutes=require('./routes')
+import express from 'express'
+import cors from 'cors'
+import dotenv from 'dotenv'
+require('./config/data_connection.js');
+import initRoutes from './routes'
 dotenv.config();
 var app = express()
 

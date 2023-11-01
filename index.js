@@ -2,8 +2,8 @@
 import express from 'express'
 import cors from 'cors'
 import dotenv from 'dotenv'
-require('./config/data_connection.js');
-import initRoutes from './routes'
+// require('./config/data_connection.js');
+// import initRoutes from './routes'
 dotenv.config();
 var app = express()
 
@@ -20,7 +20,13 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true}));
 
-initRoutes(app)
+// initRoutes(app)
+
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+  })
+
+  
 app.listen(port, () => {
     console.log(`App listening on port ${port}`)
   })
